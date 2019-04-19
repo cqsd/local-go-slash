@@ -59,7 +59,7 @@ def load_paths(paths_file):
     paths = dict()
     with open(paths_file, 'r') as f:
         for line in f:
-            short, *full = map(lambda s: s.strip(), line.split(','))
+            short, *full = (s.strip() for s in line.split(','))
             paths[short] = ''.join(full)
 
     return paths
