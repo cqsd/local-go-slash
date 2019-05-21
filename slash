@@ -162,7 +162,7 @@ def list_paths_cmd(args):
                     pass
                 else:
                     full = full[:right_width - 3] + '...'
-            print('{:3} {:{left_width}} --> {}'.format(
+            print('{:4} {:{left_width}} --> {}'.format(
                 visits or ' ',
                 short,
                 full,
